@@ -14,19 +14,32 @@ div {
 h1, h2, p {
     margin: 0;
 }
+ 
+.container {
+	width: 1114px;
+	margin-right: auto; 
+	margin-left: auto;
+   
+}
+.row {  
+}
 
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
 .pluses_title {
-    /* display:inline-block; */
-    /* position:relative; */
     margin: 0;
-    /* background-color: red; */
     padding-top: 107px;
 }
 
 .pluses_title h2 {
-	font-size: 36px;
-	text-align: center;
+    font-size: 36px;
+    text-align: center;
     text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 .pluses_title hr {
@@ -46,23 +59,18 @@ h1, h2, p {
     margin: 0px;
     margin-top: 30px;
 }
-  
-.container {
-	width: 1114px;
-	margin-right: auto; 
-	margin-left: auto;
-}
+
 .column {
 	width: 350px;
     text-align: center;
-	/* float: left; */
+	float: left;
     margin-right: 32px;
 }
 .column:last-child {
 	margin-right: 0px;
 }
 
-.column img  {
+.column_img  {
 	text-align: center;
     border: 2px solid #ff9741;
     width: 64px;
@@ -71,17 +79,16 @@ h1, h2, p {
     margin-top:80px;
 }
 
-.column h3  {
+.column_title  {
 	font-size: 20px;
 	font-family: "Open sans", Sans-serif;
 	font-weight:700;
 	text-align: center;
 	color: #333333;
-
     padding-top: 30px;
 }
 
-.column p {
+.column_text {
 	font-size: 14px;
 	font-family: "Open sans", Sans-serif;
 	color: #86878b;
@@ -91,31 +98,28 @@ h1, h2, p {
   
 .stylish {
     background: url("../images/background1.png") no-repeat center top /cover;
-    /* height: 320px; */
-    /* padding-top: 200px; */
-    background-color: green;
     padding-bottom: 63px;
     text-align: center;
 }
 
-.stylish h2 {
+.stylish_title h2 {
     color: #ffffff;
     font-size: 36px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    padding-top: 77px;
-   
+    padding-top: 77px;  
 }
-.stylish hr {
+
+.stylish_line hr {
     display: block;
-    height: 4px;
+    height: 2px;
     width: 65px;
     background: #ffffff;
     border: 0;
     margin-top:30px;
     margin-bottom: 34px;
 }
-.stylish p {
+.stylish_text {
     color:#b7b4a4;
     font-size: 16px;
     font-family:'ralewaylight', Sans-serif ;
@@ -123,10 +127,10 @@ h1, h2, p {
 }
 
 .stylish_button {
-    display: block;
     color:#ffffff;
     font-size: 15px;
-    font-family:'ralewaylight', Sans-serif ;
+    font-family:'Open Sans', sans-serif;
+    /* font-weight: 600; */
     text-align: center;
     border-style: solid;
     border-color: white;
@@ -136,26 +140,31 @@ h1, h2, p {
     margin-top: 33px;
     vertical-align: center;
     display: inline-block;
-    
+    border-width: 2px;   
 }
+
 .footer {
     background-color: #000;
-    height: 100px;
     margin:0;
-}
-.footer_social_icons {
-    color: #cccccc;
-    text-align: center;
     padding-top: 40px;
-    font-size: 24px;  
+    text-align: center;
 }
+
 .footer_social_icons i {
+    color: #cccccc;
+    
+    font-size: 24px;  
     margin-right: 30px;
+    margin-bottom: 15px;
+
 }
+
 .footer_social_icons i:last-child {
     margin-right: 0px;
 }
 .footer_social {
-    color: #fff;
+    color: #404040;
     text-align: center;
+    padding-bottom: 14px;
+   
 }
