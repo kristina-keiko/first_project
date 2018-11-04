@@ -32,8 +32,29 @@
 		</div>
 	</div>
 
-	<div class="header">
+	<div class="section header">
 		<div class="container">
+			<div class="banner-form">
+			    <form action="#">
+			        <div class="banner-form-title">
+			            <p>Try Your <span>FREE</span> Trial Today</p>
+			        </div>
+			        <div class="banner-form-main">
+			            <label>
+			                <input name="name" placeholder="Name" type="text">
+			            </label>
+			            <label>
+			                <input name="email" placeholder="Email" type="text">
+			            </label>
+			            <label>
+			                <input name="password" placeholder="Password" type="password">
+			            </label>
+			        </div>
+			        <div class="banner-form-footer">
+			            <input type="submit" value="Get Started">
+			        </div>
+			    </form>
+			</div>
 		 	<div class="head_main">
 				<img src="assets/images/logo_header.png"">
 				<h1>MODERN AXURE TEMPLATE</br>FOR BEAUTIFUL PROTOTYPES</h1>
@@ -43,13 +64,14 @@
 				<p class="button">Download</p>
 			</div>
 		</div>
+		</div>
 	</div>
 
-	 <div class="brand_bar">
+	 <div class="section brand_bar">
 	 	<div class="container">
 		 	<div class="brand_bar_text">
-				<p>Social Media</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>		
+				<p class="brand_bar_text_title">Social Media</p>
+				<p class="brand_bar_text_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br> Aenean euismod bibendum laoreet.</p>		
 			</div>
 			<div class="brand_bar_social">
 				<p>
@@ -65,11 +87,39 @@
 	   </div>
 	</div>
 
-	<div class="features">
+	<div class="section features">
+		<div class="container">
 		
+			<div class="features_tabs">
+				<div class="features_tab">
+					<a href="#">TAB 1</a>
+				</div>
+				<div class="features_tab">
+					<a href="#">TAB 2</a>
+				</div>
+				<div class="features_tab"> 
+					<a href="#">TAB 3</a>
+				</div>
+			</div>
+
+
+			<div class="features_main">
+				<p class="features_main_title">Tabs with soft transitioning effect.</p>
+				<p class="features_main_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+				bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+				justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+				penatibus et magnis dis parturient montes.</p>
+				<p class="features_main_subtitle1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+				bibendum laoreet.</p>	
+				<a class="features_main_button"href="#">Download</a>
+			</div>
+			<div class="features_image">
+				<img src="assets/images/features.png">
+			</div>
+		</div>
 	</div>
 
-	<div class="our_pices">
+	<div class="section our_prices">
 		<div class="container">
 			<div class="head pluses">
 				<h3 class="title">Why this is awersome</h3>
@@ -78,7 +128,8 @@
 			<div class="main_pluses">
 			<div class="row">	
 				<div class="column">
-					<img class="column_img" src="assets/images/image1.png" >
+					<div class="icon"><i class="far fa-lightbulb"></i></div>
+					<!-- <img class="column_img" src="assets/images/image1.png" > -->
 					<p class="column_title">Thoughtful Design</p>
 					<p class="column_text">
 					Lorem ipsum dolor sit amet, 	consectetur adipiscing 
@@ -87,7 +138,8 @@
 					</p>
 				</div>
 				<div class="column">
-				<img class="column_img src="assets/images/image2.png">
+				<div class="icon"><i class="far fa-keyboard"></i></div>
+				<!-- <img class="column_img src="assets/images/image2.png"> -->
 				<p class="column_title">Well Crafted</p>
 				<p class="column_text">
 					Lorem ipsum dolor sit amet, 	consectetur adipiscing 
@@ -97,7 +149,8 @@
 				</div>
 
 				<div class="column">
-				<img class="column_img" src="assets/images/image3.png" >
+				<div class="icon"><i class="fas fa-bolt"></i></div>
+				<!-- <img class="column_img" src="assets/images/image3.png" > -->
 				<p class="column_title">Easy to Customize</p>
 				<p class="column_text">
 					Lorem ipsum dolor sit amet, 	consectetur adipiscing 
@@ -111,7 +164,53 @@
 	</div>
 
 	<div class="pricing">
-		
+		<div class="container">
+
+			<div class="head pricing_head">
+				<h3 class="title">PRICING OPTIONS</h3>
+				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="pricing_main">
+			<div class="row">
+				<ul class="pricing_list">
+					<li class="type">Basic</li>
+					<li class="price">0</li>
+					<li class="payment">Free for Life</li>
+					<li class="list-item">1 gb of space</li>
+					<li class="list-item">10 gb of bandwidth</li>
+					<li class="list-item">3 websites</li>
+					<li class="list-item">Basic Customization</li>
+					<li class="list-item">wordpress integration</li>
+					<li class="list-item">email support</li>
+				</ul>
+				<ul class="pricing_list">
+					<li class="type">Professional</li>
+					<li class="price">19</li>
+					<li class="payment">Monthly Payment</li>
+					<li class="popular">OUR MOST POPULAR</li>
+					<li class="list-item">5 gb of space</li>
+					<li class="list-item">50 gb of bandwidth</li>
+					<li class="list-item">12 websites</li>
+					<li class="list-item">Advanced Customization</li>
+					<li class="list-item">wordpress integration</li>
+					<li class="list-item">email support</li>
+				</ul>
+				<ul class="pricing_list">
+					<li class="type">Enterprise</li>
+					<li class="price">70</li>
+					<li class="payment">Monthly Payment</li>
+					<li class="list-item">Unlimited space</li>
+					<li class="list-item">unlimited bandwidth</li>
+					<li class="list-item">100 websites</li>
+					<li class="list-item">Advanced Customization</li>
+					<li class="list-item">wordpress integration</li>
+					<li class="list-item">24/7 customer support</li>
+				</ul>
+			</div>		
+			</div>
+
+
+		</div>
 	</div>
 
 	<div class="testimonials">
