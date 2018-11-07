@@ -51,7 +51,9 @@
 			            </label>
 			        </div>
 			        <div class="banner-form-footer">
-			            <input type="submit" value="Get Started">
+			            <label>
+			                   <input type="submit" value="Get Started">
+			            </label>       
 			        </div>
 			    </form>
 			</div>
@@ -171,7 +173,7 @@
 				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</div>
 			<div class="pricing_main">
-			<div class="row">
+			<div class="row_pricing">
 				<ul class="pricing_list">
 					<li class="type">Basic</li>
 					<li class="price">0</li>
@@ -183,11 +185,11 @@
 					<li class="list-item">wordpress integration</li>
 					<li class="list-item">email support</li>
 				</ul>
-				<ul class="pricing_list">
+				<ul class="pricing_list pricing-popular-list">
 					<li class="type">Professional</li>
 					<li class="price">19</li>
 					<li class="payment">Monthly Payment</li>
-					<li class="popular">OUR MOST POPULAR</li>
+					<li class="popular ">OUR MOST POPULAR</li>
 					<li class="list-item">5 gb of space</li>
 					<li class="list-item">50 gb of bandwidth</li>
 					<li class="list-item">12 websites</li>
@@ -232,8 +234,8 @@
 					<div class="bio">
 						<img class="column_testimonials_photo" src="assets/images/photo.png"> 
 						<div class="column_testimonials_personality">
-							<p>Jeremy H.</p>
-							<p>Manager</p>
+							<p class="name">Jeremy H.</p>
+							<p class ="profession">Manager</p>
 						</div>
 					</div>
 				</div>
@@ -244,10 +246,12 @@
 					accusamus expedita repellat similique 
 					odio aspernatur ex, architecto eaque 
 					quo suscipit.</p>
-					<img class="column_testimonials_photo" src="assets/images/photo.png">
-					<div class="column_testimonials_personality"> 
-						<p>John S.</p>
-						<p>Freelancer</p>
+					<div class="bio">
+						<img class="column_testimonials_photo" src="assets/images/photo.png">
+						<div class="column_testimonials_personality"> 
+							<p class="name">John S.</p>
+							<p class ="profession">Freelancer</p>
+						</div>
 					</div>
 				</div>
 
@@ -257,10 +261,12 @@
 					accusamus expedita repellat similique 
 					odio aspernatur ex, architecto eaque 
 					quo suscipit.</p>
-					<img class="column_testimonials_photo" src="assets/images/photo.png">
-					<div class="column_testimonials_personality"> 
-						<p>Susan W.</p>
-						<p>Photographer</p>
+					<div class="bio">
+						<img class="column_testimonials_photo" src="assets/images/photo.png">
+						<div class="column_testimonials_personality"> 
+							<p class="name">Susan W.</p>
+							<p class ="profession">Photographer</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -268,43 +274,69 @@
 	</div>
 
 	<div class="custom_section">
-		
+		<div class="container">
+			<div class="head stylish">
+				<h3 class="title">STYLISH AXURE DESIGN</h3>
+		 		<p class="subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+		 		<button class="button_stylish">Download</button>
+		 	</div>
+		</div> 
 	</div>
 
-	<div class="contact_us">
+	<div class="section contact_us">
 		<div class="container">
-	 		<div class="head contact">
+	 		<div class="head contact_us">
 	 			<h3 class="title">CONTACT US</h3> 
 	 			<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 	 		</div>
-	 	    <div class="form_block">
-	 	    	<form  action="#" method="#">
-	 				<div><input type="text" placeholder="Name" maxlength="#"></div> 
-	 				<div><input type="text" placeholder="Email"></div> 
-	 				<div><input type="text" placeholder="Subject"></div>
-            		<div class="Message"><input type="text" placeholder="Message"></div>	
-	 				<div><input type="button" value="Send Message"></div>
+	 	    <div class="form_block contact_us">
+	 	    	<form  action="#">
+	 	    		<div class="contact_us_form">
+	 	    			<div class="support">
+	 						<label> 
+	 							<input type="text" placeholder="Name" maxlength="#">
+	 						</label>
+	 						<label>	
+	 							<input type="text" placeholder="Email">
+	 						</label> 
+	 						<label>
+	 				 			<input type="text" placeholder="Subject">
+	 						</label>
+	 					</div>
+            			<div class="message">
+            				<label>
+            					<input type="text" placeholder="Message">
+            				</label>	
+            			</div>
+					</div>
+	 				
+	 				<div class="button_contact_us">
+	 					<button>Send Message</button> 
+	 				</div>
 	 			</form>
 	 		</div>
 	 	</div>
 	</div>
 
-	<div class="footer">
-		<div class= "footer_social_icons">
-			<p>
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-google-plus-g"></i>
-				<i class="fab fa-pinterest"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-stumbleupon"></i>
-				<i class="fas fa-rss"></i>
-			</p>
+	<div class="section footer">
+			<div class="container">
+			 	<div class= "footer_social_icons">
+					<p>
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-google-plus-g"></i>
+						<i class="fab fa-pinterest"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-stumbleupon"></i>
+						<i class="fas fa-rss"></i>
+					</p>
+				</div>
+		 		<div class= "footer_social"> 
+					<p> © 2015 Axure Themes</p>
+				</div>
+			</div>
 		</div>
-
-	 	<div class= "footer_social"> 
-		<p> © 2015 Axure Themes</p>
-		</div>
-	</div> 
+	</div>
 
 </div>
+</body>

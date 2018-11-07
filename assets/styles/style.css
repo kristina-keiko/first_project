@@ -6,18 +6,14 @@ body {
 
  } 
 
-
 div { 
     box-sizing: border-box;     
 }
 
-
-
 .container {
     max-width: 1114px;
     width: 100%;
-    margin:0 auto; 
-      
+    margin:0 auto;       
 }
 .container:after{
     content: '';
@@ -27,7 +23,6 @@ div {
 .section.pricing_options {
     background: #f5f5f5;
 }
-
 
 .head{
 }
@@ -46,7 +41,7 @@ div {
     font-size: 14px;
     font-family: "Open sans", Sans-serif;
     text-align: center;
-    margin: 30px 0;
+    margin-top:30px;
  
 }
 
@@ -121,7 +116,6 @@ nav ul li a {
     font-family: "Open sans", Sans-serif;
     text-align: left;
     margin: 30px 0;
-    /* background: yellow; */
 }
  .head_main h1:after{
     content: '';
@@ -131,7 +125,7 @@ nav ul li a {
     display: block;
     margin: 40px 0;
 }
-.head_main .button {
+ .button {
     background: transparent;
     font: bold 15px 'Open Sans', sans-serif;
     border: 2px solid #fff;
@@ -218,6 +212,9 @@ input:not([type="submit"]){
     display: block;
     float: right;
 }
+.brand_bar_social p :hover{
+    background-color: #fb7404;
+}
 .brand_bar_social p i {
     font-size: 48px;
     color: #cccccc;
@@ -299,7 +296,7 @@ input:not([type="submit"]){
 
 .row {  
     padding-top: 80px;
-    padding-bottom: 104px;  
+    padding-bottom: 104px; 
 }
 .row:after {
     clear: both;
@@ -333,7 +330,6 @@ input:not([type="submit"]){
 	font-weight:700;
 	text-align: center;
 	color: #333333;
-    padding-top: 30px;
 }
 
 .column_text {
@@ -346,6 +342,14 @@ input:not([type="submit"]){
     background: #f5f5f5;
 }
 .pricing_head {
+}
+.row_pricing{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 96px;
+    margin-top: 80px;
 }
 .pricing_list {
     display: inline-block;
@@ -392,100 +396,160 @@ input:not([type="submit"]){
      background: #333333; 
     border-bottom: 5px solid #ff8b38;
 }
+
+.pricing-popular-list .payment{
+    border-bottom: none;
+}
+
 .pricing_list .popular{
     font: bold 14px "Open sans", Sans-serif;
     color: #ffffff;
     background: #ff8b38;
 }
 .column_testimonials_main{
-   background: #2effee;
+   
    display:flex ;
    flex-direction: row;
    justify-content: center; 
    align-items: flex-start; 
+   padding-top: 55px;
 }
 .column_testimonials {
    width: 273px ; 
    margin-right: 120px;
-   background: green;
+ 
 }
+
 .column_testimonials:last-child {
      margin-right: 0px;
 }
+
+
 .column_testimonials_text {
+    position: relative;
     background: #f5f5f5;
     border-radius: 2px;
     font: italic 14px "Open sans", Sans-serif;
     color: #949598;
     padding: 24px 13px 26px 12px;
     text-align: left;
+    
 }
+
+.column_testimonials_text:after {
+    top: 100%;
+    left: 45px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(245, 245, 245, 0);
+    border-top-color: #f5f5f5;
+    /* border-width: 20px; */
+    border-top-width: 15px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    margin-left: -20px;
+}
+
 .bio {
-    display: table;
-    border-spacing: 2px 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 23px;
 }
 .column_testimonials_photo {
-    display: table-cell;
-    vertical-align: bottom;
+    margin-right: 15px;
 }
 .column_testimonials_personality {
-    background: #ff2ecb;
     display: table-cell;
     text-align: left;
     vertical-align: middle;
 }
-
-
-.stylish {
+.column_testimonials_personality .name {
+    font: bold 20px "Open sans", Sans-serif ;
+}
+.column_testimonials_personality .profession {
+    font: 14px "Open sans", Sans-serif ;
+    color: #86878b;
+}
+.custom_section {
     background: url("../images/background1.png") no-repeat center top /cover;
-    padding-bottom: 63px;
     text-align: center;
-    height: 319px;
-}
+    padding-bottom: 63px;
 
-input{
-    width: 527px;
-    margin-bottom: 40px;
-    font-size: 15px;
-    color: #c5c5c5;
-    font-family:"Open sans", Sans-serif
 }
-input [type="text"]{
-    padding-bottom: 10px;
+.stylish h3 {
+    color: #fff;
 }
+.custom_section .title:after{
+    content: '';
+    background: #fff;
+}
+.button_stylish {
+      font: semi-bold 15px "Open sans", Sans-serif ;
+      color: #fff;
+      padding:13px 0 ;
+      width:135px ;
+      text-align: center;
+      border: 2px solid #dbdad8;
+      background: transparent;
+      margin-top: 33px;
+  }
 
-.form {
-    max-width: 1121px;
-    background: red;
-    margin-right: auto; 
-    margin-left: auto;
-    font-size: 15px;
-    color: #c5c5c5;
-    font-family:"Open sans", Sans-serif
-}
-
-.form_block {
-    width: 527px;
+.contact_us_form{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 90px;
+}   
+.support {
+    max-width: 527px;
     display: inline-block;
 }
-.messege {
+.message  {
     display: inline-block;
+    max-width: 527px;
+    width: 100%;
+   
+}
+.message input{
+
+}
+.button_contact_us {
+    text-align: center;
+    padding: 42px 0 81px;
 }
 
+.button_contact_us button{
+    font: semi-bold 15px "Open sans", Sans-serif;
+    background-color: #ff9b51;
+    padding: 16px 0 14px;
+    width: 145px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+.button_contact_us button:hover{
+    background-color: #fb7404;
+}
 .footer {
-    background-color: #000;
-    margin:0;
+    background: #000000;
     padding-top: 40px;
     text-align: center;
 }
 
-.footer_social_icons i {
+ .footer_social_icons i  {
     color: #cccccc;
-    
     font-size: 24px;  
     margin-right: 30px;
     margin-bottom: 15px;
-
 }
 
 .footer_social_icons i:last-child {
@@ -495,5 +559,4 @@ input [type="text"]{
     color: #404040;
     text-align: center;
     padding-bottom: 14px;
-   
-}
+} 
